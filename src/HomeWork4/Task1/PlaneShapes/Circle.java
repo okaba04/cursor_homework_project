@@ -2,14 +2,13 @@ package HomeWork4.Task1.PlaneShapes;
 
 import HomeWork4.Task1.Vertex;
 
-
 public class Circle extends PlaneShape {
 
-    private Vertex a;
+    private Vertex vertex;
     private double radius;
 
-    public Circle(Vertex a, double radius) {
-        this.a = a;
+    public Circle(double x, double y, double radius) {
+        this.vertex = new Vertex(x, y);
         this.radius = radius;
     }
 
@@ -25,10 +24,9 @@ public class Circle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Circle: " + a.toString() +
-                ", radius = " + radius +
-                ", area = " + getArea() +
-                ", perimeter = " + getPerimeter();
+        return "Circle: " + this.vertex +
+            ", radius = " + radius +
+            ", area = " + getArea() +
+            ", perimeter = " + getPerimeter();
     }
-
 }

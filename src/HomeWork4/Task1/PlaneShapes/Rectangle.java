@@ -4,12 +4,12 @@ import HomeWork4.Task1.Vertex;
 
 public class Rectangle extends PlaneShape {
 
-    private Vertex a;
+    private Vertex vertex;
     private double width;
     private double high;
 
-    public Rectangle(Vertex a, double width, double high) {
-        this.a = a;
+    public Rectangle(double x, double y, double width, double high) {
+        this.vertex = new Vertex(x, y);
         this.width = width;
         this.high = high;
     }
@@ -26,8 +26,8 @@ public class Rectangle extends PlaneShape {
 
     @Override
     public String toString() {
-        return "Rectangle: " + a.toString() +
-                ", area = " + getArea() +
-                ", perimeter = " + getPerimeter();
+        return "Rectangle: " + this.vertex +
+            ", area = " + getArea() +
+            ", perimeter = " + getPerimeter();
     }
 }
