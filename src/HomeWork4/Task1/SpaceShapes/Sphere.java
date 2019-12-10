@@ -4,11 +4,11 @@ import HomeWork4.Task1.Vertex;
 
 public class Sphere extends SpaceShape {
 
-    private Vertex a;
+    private Vertex vertex;
     private double radius;
 
-    public Sphere(Vertex a, double radius) {
-        this.a = a;
+    public Sphere(double x, double y, double z, double radius) {
+        this.vertex = new Vertex(x, y, z);
         this.radius = radius;
     }
 
@@ -24,9 +24,9 @@ public class Sphere extends SpaceShape {
 
     @Override
     public String toString() {
-        return "Sphere: " + a +
-                ", radius = " + radius +
-                ", volume = " + getVolume() +
-                ", area = " + getArea();
+        return "Sphere: " + this.vertex +
+            ", radius = " + radius +
+            ", volume = " + getVolume() +
+            ", area = " + getArea();
     }
 }

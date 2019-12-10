@@ -4,12 +4,12 @@ import HomeWork4.Task1.Vertex;
 
 public class SquarePyramid extends SpaceShape {
 
-    private Vertex a;
+    private Vertex vertex;
     private double baseWidth;
     private double pyramidHeight;
 
-    public SquarePyramid(Vertex a, double baseWidth, double pyramidHeight) {
-        this.a = a;
+    public SquarePyramid(double x, double y, double z, double baseWidth, double pyramidHeight) {
+        this.vertex = new Vertex(x, y, z);
         this.baseWidth = baseWidth;
         this.pyramidHeight = pyramidHeight;
     }
@@ -26,11 +26,10 @@ public class SquarePyramid extends SpaceShape {
 
     @Override
     public String toString() {
-        return "SquarePyramid: " + a +
-                ", base width = " + baseWidth +
-                ", height = " + pyramidHeight +
-                ", volume = " + getVolume() +
-                ", area = " + getArea();
+        return "SquarePyramid: " + this.vertex +
+            ", base width = " + baseWidth +
+            ", height = " + pyramidHeight +
+            ", volume = " + getVolume() +
+            ", area = " + getArea();
     }
 }
-

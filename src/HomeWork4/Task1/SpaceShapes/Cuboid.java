@@ -3,13 +3,14 @@ package HomeWork4.Task1.SpaceShapes;
 import HomeWork4.Task1.Vertex;
 
 public class Cuboid extends SpaceShape {
-    private Vertex a;
+
+    private Vertex vertex;
     private double width;
     private double height;
     private double depth;
 
-    public Cuboid(Vertex a, double width, double height, double depth) {
-        this.a = a;
+    public Cuboid(double x, double y, double z, double width, double height, double depth) {
+        this.vertex = new Vertex(x, y, z);
         this.width = width;
         this.height = height;
         this.depth = depth;
@@ -27,11 +28,11 @@ public class Cuboid extends SpaceShape {
 
     @Override
     public String toString() {
-        return "Cuboid: " + a +
-                ", width = " + width +
-                ", height = " + height +
-                ", depth = " + depth +
-                ", volume = " + getVolume() +
-                ", area = " + getArea();
+        return "Cuboid: " + this.vertex +
+            ", width = " + width +
+            ", height = " + height +
+            ", depth = " + depth +
+            ", volume = " + getVolume() +
+            ", area = " + getArea();
     }
 }

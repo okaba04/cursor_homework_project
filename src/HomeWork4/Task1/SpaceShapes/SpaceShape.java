@@ -7,4 +7,3 @@ import HomeWork4.Task1.Shape;
 public abstract class SpaceShape extends Shape implements AreaMeasurable, VolumeMeasurable {
 
 }
-
