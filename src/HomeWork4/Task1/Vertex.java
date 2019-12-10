@@ -11,7 +11,7 @@ public class Vertex {
         this.y = y;
     }
 
-    public Vertex (double x, double y, double z) {
+    public Vertex(double x, double y, double z) {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -31,7 +31,6 @@ public class Vertex {
 
     @Override
     public String toString() {
-        return "Vertex has coordinates: " + x + " , " + y + " , " + z;
+        return "Vertex coordinates: " + this.x + " , " + this.y + " , " + this.z;
     }
-
 }

@@ -1,5 +1,8 @@
 package HomeWork4.Task1;
 
 public abstract class Shape {
-    Shape[] array = new Shape[6];
+
+    public double calculateDistanceBetweenTwoVertices(Vertex a, Vertex b) {
+        return Math.sqrt((Math.pow((a.getX() - b.getX()), 2) + Math.pow((a.getY() - b.getY()), 2)));
+    }
 }
